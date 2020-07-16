@@ -1178,6 +1178,11 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
+"@palmetto/palmetto-design-tokens@^0.1.10":
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/@palmetto/palmetto-design-tokens/-/palmetto-design-tokens-0.1.10.tgz#0511ff9b7190b776d70b3ebb0a6cb404f277f359"
+  integrity sha512-G0KZCTiY6zHARuPbB+nI+DUWb5bPtyZSylco89HML6+6dhtONNIv+RDgN3Bz4NjiuVEDw6rbae0wUtyFB8qUeg==
+
 "@svgr/babel-plugin-add-jsx-attribute@^4.2.0":
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/@svgr/babel-plugin-add-jsx-attribute/-/babel-plugin-add-jsx-attribute-4.2.0.tgz#dadcb6218503532d6884b210e7f3c502caaa44b1"
