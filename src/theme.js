@@ -1,21 +1,25 @@
 import theme from 'styled-theming';
+import palmettoDesignTokens from '@palmetto/palmetto-design-tokens/build/js/variables-color';
+
+const brandLight = palmettoDesignTokens.color.brand.light.base.value;
+const brandDark = palmettoDesignTokens.color.brand.dark.base.value;
 
 export const backgroundColor = theme('mode', {
-  light: '#fafafa',
-  dark: '#222'
+  light: brandLight,
+  dark: brandDark
 });
 
 export const textColor = theme('mode', {
-  light: '#000',
-  dark: '#fff'
+  light: brandDark,
+  dark: brandLight
 });
 
 export const buttonBackgroundColor = theme('mode', {
-  light: '#222',
-  dark: '#eee'
+  light: brandDark,
+  dark: brandLight
 });
 
 export const buttonTextColor = theme('mode', {
-  light: '#eee',
-  dark: '#222'
+  light: brandLight,
+  dark: brandDark
 });
