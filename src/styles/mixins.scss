@@ -1,0 +1,9 @@
+@mixin light-background {
+  background-color: #eee;
+  color: #222;
+}
+
+@mixin dark-background {
+  background-color: #222;
+  color: #fff;
+}
