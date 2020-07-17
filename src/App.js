@@ -20,8 +20,8 @@ function App (props) {
           </p>
         <p>
           <button 
+            className="button"
             onClick={() => themeToggle.toggle()} 
-            className={`button ${theme}`}
           >
             {props.theme.mode === 'dark' ? "Switch to Light Mode" : "Switch to Dark Mode"}
           </button>

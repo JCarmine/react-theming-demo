@@ -20,14 +20,6 @@
 }
 
 .namespacedContainer {
-  &.light {
-    @include light-background;
-  }
-
-  &.dark {
-    @include dark-background;
-  }
-
   .button {
     border: none;
     border-radius: 0.3em;
@@ -35,12 +27,20 @@
     cursor: pointer;
     font-size: 1em;
     padding: 0.5em 1em;
-  
-    &.light {
+  }
+
+  &.light {
+    @include light-background;
+
+    .button {
       @include dark-background;
     }
-  
-    &.dark {
+  }
+
+  &.dark {
+    @include dark-background;
+    
+    .button {
       @include light-background;
     }
   }
