@@ -1,0 +1,6 @@
+@import './variables.scss';
+
+@function theme-aware($theme, $property) {
+  $map: map-get($themes, $theme);
+  @return map-get($map, $property);
+}
