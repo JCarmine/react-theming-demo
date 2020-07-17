@@ -1,19 +1,4 @@
-@import './functions.scss';
-
-$themes: (
-  light: (
-    backgroundColor: $color-brand-light-base,
-    textColor: $color-brand-dark-base,
-    buttonBackgroundColor: $color-brand-dark-base,
-    buttonTextColor: $color-brand-light-base
-  ),
-  dark: (
-    backgroundColor: $color-brand-dark-base,
-    textColor: $color-brand-light-base,
-    buttonBackgroundColor: $color-brand-light-base,
-    buttonTextColor: $color-brand-dark-base
-  )
-);
+@import './mixins.scss';
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -36,13 +21,11 @@ $themes: (
 
 .namespacedContainer {
   &.light {
-    background-color: theme-aware(light, backgroundColor);
-    color: theme-aware(light, textColor);
+    @include light-background;
   }
 
   &.dark {
-    background-color: theme-aware(dark, backgroundColor);
-    color: theme-aware(dark, textColor);
+    @include dark-background;
   }
 
   .button {
@@ -54,13 +37,11 @@ $themes: (
     padding: 0.5em 1em;
   
     &.light {
-      background-color: theme-aware(light, backgroundColor);
-      color: theme-aware(light, textColor);
+      @include dark-background;
     }
   
     &.dark {
-      background-color: theme-aware(dark, backgroundColor);
-      color: theme-aware(dark, textColor);
+      @include light-background;
     }
   }
 }

@@ -9,8 +9,10 @@ function App (props) {
 
   const themeToggle = useTheme();
 
+  const theme = props.theme.mode === 'light' ? 'light' : 'dark';
+
   return (
-    <div className={`namespacedContainer ${props.theme.mode === 'light' ? 'light' : 'dark'}`}>
+    <div className={`namespacedContainer ${theme}`}>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,7 +21,7 @@ function App (props) {
         <p>
           <button 
             onClick={() => themeToggle.toggle()} 
-            className={`button ${props.theme.mode === 'light' ? 'dark' : 'light'}`}
+            className={`button ${theme}`}
           >
             {props.theme.mode === 'dark' ? "Switch to Light Mode" : "Switch to Dark Mode"}
           </button>

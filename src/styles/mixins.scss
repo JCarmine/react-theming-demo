@@ -1,11 +1,11 @@
-@import './variables.scss';
+@import './functions.scss';
 
 @mixin light-background {
-  background-color: $color-brand-light-base;
-  color: $color-brand-dark-base;
+  background-color: theme-aware(light, backgroundColor);
+  color: theme-aware(light, textColor);
 }
 
 @mixin dark-background {
-  background-color: $color-brand-dark-base;
-  color: $color-brand-light-base;
+  background-color: theme-aware(dark, backgroundColor);
+  color: theme-aware(dark, textColor);
 }

@@ -1,0 +1,14 @@
+$themes: (
+  light: (
+    backgroundColor: $color-brand-light-base,
+    textColor: $color-brand-dark-base,
+    buttonBackgroundColor: $color-brand-dark-base,
+    buttonTextColor: $color-brand-light-base
+  ),
+  dark: (
+    backgroundColor: $color-brand-dark-base,
+    textColor: $color-brand-light-base,
+    buttonBackgroundColor: $color-brand-light-base,
+    buttonTextColor: $color-brand-dark-base
+  )
+);
