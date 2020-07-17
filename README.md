@@ -1,4 +1,4 @@
-# React Dark Mode with Styled Theming and Context
+# React ThemeContext Demo with CSS-IN-JS and Sass Examples
 
 ### This repository coincides with a walkthrough available to read on Medium [here](https://medium.com/@rossbulat/react-dark-mode-with-styled-theming-and-context-57557de6400).
 
